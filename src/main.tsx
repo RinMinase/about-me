@@ -1,6 +1,19 @@
-import { render } from 'preact'
-import { App } from './app'
+import { render } from "preact";
 
-import './main.css'
+import { Nav } from "./common";
 
-render(<App />, document.getElementById('app') as HTMLElement)
+import "./main.css";
+import Routes from "./routes";
+
+function App() {
+  return (
+    <>
+      <Nav />
+      <div class="main-component">
+        <Routes />
+      </div>
+    </>
+  );
+}
+
+render(<App />, document.getElementById("app") as HTMLElement);
