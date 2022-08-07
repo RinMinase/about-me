@@ -15,16 +15,24 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <picture>
-        <source srcset={bg4x} media="(min-width: 2000px)" />
-        <source srcset={bg2x} media="(min-width: 1100px)" />
-        <source srcset={bg} media="(min-width: 900px)" />
-        <img src={bgSm} alt="" />
-      </picture>
+    <div class="home-container">
+      <div class="relative">
+        <picture class="absolute top-0 left-0 -z-10 overflow-hidden background-image">
+          <source srcset={bg4x} media="(min-width: 2000px)" />
+          <source srcset={bg2x} media="(min-width: 1100px)" />
+          <source srcset={bg} media="(min-width: 900px)" />
+          <img src={bgSm} alt="" />
+        </picture>
 
-      <div class="text-4xl">
-        <Typewriter onInit={handleInit} options={{ cursor: "_", delay: 75 }} />
+        <div class="flex text-4xl flex justify-center items-center welcome-message">
+          <Typewriter
+            onInit={handleInit}
+            options={{ cursor: "_", delay: 75 }}
+          />
+        </div>
+      </div>
+      <div>
+        <p>home content</p>
       </div>
     </div>
   );
