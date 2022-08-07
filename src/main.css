@@ -12,6 +12,7 @@
 }
 
 .home-container .background-image,
+.home-container .background-image img,
 .home-container .welcome-message {
   height: calc(100vh - 48px);
 }

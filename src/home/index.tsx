@@ -21,7 +21,7 @@ const Home = () => {
           <source srcset={bg4x} media="(min-width: 2000px)" />
           <source srcset={bg2x} media="(min-width: 1100px)" />
           <source srcset={bg} media="(min-width: 900px)" />
-          <img src={bgSm} alt="" />
+          <img src={bgSm} alt="background" class="w-screen object-cover object-right" />
         </picture>
 
         <div class="flex text-4xl flex justify-center items-center welcome-message">
