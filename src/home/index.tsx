@@ -1,5 +1,6 @@
 import Typewriter, { TypewriterClass } from "typewriter-effect";
 
+import bgSm from "../assets/bg-sm.jpg";
 import bg from "../assets/bg.jpg";
 import bg2x from "../assets/bg-2x.jpg";
 import bg4x from "../assets/bg-4x.jpg";
@@ -18,7 +19,8 @@ const Home = () => {
       <picture>
         <source srcset={bg4x} media="(min-width: 2000px)" />
         <source srcset={bg2x} media="(min-width: 1100px)" />
-        <img src={bg} alt="" />
+        <source srcset={bg} media="(min-width: 900px)" />
+        <img src={bgSm} alt="" />
       </picture>
 
       <div class="text-4xl">
