@@ -15,12 +15,12 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.13",
-    "@preact/preset-vite": "^2.3.0",
+    "@babel/core": "^7.19.0",
+    "@preact/preset-vite": "^2.4.0",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
-    "typescript": "^4.8.2",
-    "vite": "^3.0.9"
+    "typescript": "^4.8.3",
+    "vite": "^3.1.0"
   },
   "resolutions": {
     "react": "^18.0.0",
