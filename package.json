@@ -15,6 +15,7 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.13",
     "@preact/preset-vite": "^2.3.0",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
@@ -22,7 +23,6 @@
     "vite": "^3.0.9"
   },
   "resolutions": {
-    "@babel/core": "^7.18.13",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
