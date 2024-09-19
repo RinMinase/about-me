@@ -1,10 +1,14 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
-import preact from '@preact/preset-vite'
+import preact from "@preact/preset-vite";
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  plugins: [preact()],
+  plugins: [preact(), tailwindcss()],
   esbuild: {
     logOverride: { "this-is-undefined-in-esm": "silent" },
   },
-})
+  css: {
+    transformer: "lightningcss",
+  },
+});
