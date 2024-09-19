@@ -5,8 +5,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [preact(), tailwindcss()],
-  esbuild: {
-    logOverride: { "this-is-undefined-in-esm": "silent" },
+  server: {
+    port: 3000,
+    host: true,
   },
   css: {
     transformer: "lightningcss",
